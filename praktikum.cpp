@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+
 #include <stdlib.h>
 #include <cmath>
 #include <string>
@@ -44,7 +45,7 @@ double f(double x, int code){
 }
 
 int main(){
-    double x1, x2, x3, fx1, fx2, fx3;
+    double x1, x2, x3, fx1, fx2, fx3, batasBawah, batasAtas;
     int code;
 
     cout << "Persamaan:" << endl;
@@ -61,10 +62,10 @@ int main(){
     cin >> code;
 
     cout << "Batas Bawah\t: ";
-    cin >> x1;
+    cin >> batasBawah;
 
     cout << "Batas atas\t: ";
-    cin >> x2;
+    cin >> batasAtas;
 
     char bdr[] = "────────────";
 
@@ -72,6 +73,8 @@ int main(){
     printf("│%7s│%12s│%12s│%12s│%12s│%12s│%12s│\n", "iterasi", "x1", "x2", "x3", "f(x1)", "f(x2)", "f(x3)");
     printf("├%7s┼%12s┼%12s┼%12s┼%12s┼%12s┼%12s┤\n", "───────", bdr, bdr, bdr, bdr, bdr, bdr);
 
+    x1 = batasBawah;
+    x2 = batasAtas;
     for (int i = 0; i <= 100; i++){
         x3 = (x1 + x2) / 2;
         fx1 = f(x1, code);
@@ -99,7 +102,7 @@ int main(){
 
     vector<double> x, y;
 
-    for (float i = -2; i < 2; i += 0.1){
+    for (float i = batasBawah; i < batasAtas; i += 0.1){
         x.push_back(i);
         y.push_back(f(i, code));
     }
