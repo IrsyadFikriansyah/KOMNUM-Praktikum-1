@@ -87,6 +87,8 @@ int main(){
 
         if (fabs(fx3) < 0.001)
             break;
+        else if (fabs(fx3) > 0.001 && i == 100)
+            x3 = INFINITY;
     }
     printf("└%7s┴%12s┴%12s┴%12s┴%12s┴%12s┴%12s┘\n", "───────", bdr, bdr, bdr, bdr, bdr, bdr);
 
