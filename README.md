@@ -28,7 +28,7 @@ user input
 - batas atas
 
 ![image](https://user-images.githubusercontent.com/22763869/198871590-bd759242-0c67-431d-bac7-49e2445573a3.png)
-hasil enyelesaian persamaan
+hasil penyelesaian persamaan
 
 ![image](https://user-images.githubusercontent.com/22763869/198871482-ba3ea65d-9a8a-4e0c-a131-7f86044edb0e.png)
 ploting grafik
